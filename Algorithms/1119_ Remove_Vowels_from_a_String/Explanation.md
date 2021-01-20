@@ -33,3 +33,18 @@ public class Solution {
         return sb.toString();
     }
 ```
+## Complexity Analysis
+### TimeComplexity
+1. As you can see above we are looping only one time at the input **O(N)**
+   * Set lookup takes constant time **O(1)**
+   * Adding Character to StringBuilder takes constant time  **O(1)**
+2. calling the toString method takes **O(N)**
+**In total we have O(N + N) = O(2N) = O(N)**
+
+
+### SpaceComplexity
+1. Stringbuilder in worst case will contain all the String **O(N)**
+2. since we are only adding vowels (5 characters in total) then the splace complexity of the set is **O(1)**
+3. toString Method will create a new String **O(N)**
+**In total we have O(N + N) = O(2N) = O(N)**
+
